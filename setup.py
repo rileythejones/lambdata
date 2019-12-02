@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
     setuptools.setup(
     name="lambdata-DS9",
     version = "0.1.1",
-    author = "alekslovesdata",
+    author = "rileythejones",
     description = "a collection of data science helper functions",
     long_description = LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
