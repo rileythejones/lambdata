@@ -1,4 +1,4 @@
-"""lambdata - collection of data science hwlper functions """
+"""lambdata - a collection of data science helper functions """
 
 import pandas as pd 
 import numpy as np 
@@ -10,5 +10,5 @@ ZEROS = pd.DataFrame(np.zeros(50))
 
 # sample functions 
 
-def increment(x)
+def increment(x):
     return (x + 1)
