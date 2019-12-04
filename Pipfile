@@ -10,6 +10,7 @@ twine = "*"
 [packages]
 numpy = "*"
 pandas = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.7"
