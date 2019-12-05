@@ -33,8 +33,8 @@ _Python Modules, Packages, and Environments_
 - git add . 
 - git commit -m "made pipfiles"  
 - git push origin master 
-  * git config --global user.name "rileythejones" (set this up once)
-  * git config --global user.email "rileymjones@gmail.com"
+  * git config --global user.name "GITHUBUSERNAME" (set this up once)
+  * git config --global user.email "YOUREMAIL@gmail.com"
 
 # Make a folder that will be the package name and the `__init__.py` file 
 - mkdir lambdata_rileythejones
