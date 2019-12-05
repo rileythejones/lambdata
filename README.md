@@ -365,7 +365,8 @@ import lambdata_soycode as lambdata
 ```
 dir(lambdata)
 lambdata.TEST
-~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~
 Dockerfile:
 FROM debian
 ### *Minimal* Python container
@@ -378,7 +379,7 @@ RUN apt-get update && \
  pip3 install pandas && \
  pip3 install -i https://test.pypi.org/simple/ lambdata-soycode && \
  python3 -c "import lambdata_soycode; print('Success!')"
-
+ ~~~
 
 
  # UNIT 3 - Sprint 1- Module 4 
