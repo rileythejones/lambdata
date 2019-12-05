@@ -1,7 +1,48 @@
-# lambdata
-a collection of data science helper functions 
+# lambdata_rileythejones
+
+a collection of data science helper functions, for playing with data 
+https://test.pypi.org/project/lambdata-rileythejones/0.1.7/
+
+# documentation 
+
+- in google colab:
+
+```
+pip install -i https://test.pypi.org/simple/ lambdata-rileythejones==0.1.7
+```
+
+- import the Class and the sample dataframes 
+```
+from lambdata_rileythejones import CleanData
+from lambdata_rileythejones.df_utils import df_null, df_random, df_random_column
+```
+
+- CleanData(df).check_nulls() 
+  - takes a dataframe and returns the total null values in the dataframe 
+- CleanData(df).outlier_filter() 
+  - takes a dataframe and returns the dataframe with the outlier rows filtered out , default = 2 STD
+- CleanData(df).bag_tag(column) 
+  - takes a column and returns a column where all the values are integer categories based on their proportional binning , default number of bins = 10
 
 
+```
+clean_data = CleanData(df_random)
+clean_data.check_nulls()
+=> 0
+dirty_data = CleanData(df_null)
+dirty_data.check_nulls()
+=> 1
+
+df_random.shape
+=> (100, 3)
+
+clean_data.outlier_filter().shape()
+=> (86, 3)
+
+df_category = clean_data.bag_tag(df_random_column, 7)
+df_category.unique()
+=> 7
+```
 
 # UNIT 3 - Sprint 1- Module 1 
 _Python Modules, Packages, and Environments_
