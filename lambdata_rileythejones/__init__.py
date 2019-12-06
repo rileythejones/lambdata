@@ -16,8 +16,7 @@ class CleanData:
     """
     def check_nulls(self):
         result = self.df.isnull().sum().sum()
-        return result
-        # return print('There are', result, 'null values in this dataframe')
+        return f"There are {result} null values in this dataframe"
 
     """
     removes rows that have at least one value that
